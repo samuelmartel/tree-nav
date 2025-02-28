@@ -1,51 +1,53 @@
+import { TreeNode } from '../TreeNav/TreeNav'
+
 const backendData = [
     {
       id: "1",
-      label: "Office Map"
+      name: "Office Map"
     },
     {
       id: "2",
-      label: "New Employee Onboarding",
+      name: "New Employee Onboarding",
       children: [
         {
           id: "8",
-          label: "Onboarding Materials"
+          name: "Onboarding Materials"
         },
         {
           id: "9",
-          label: "Training"
+          name: "Training"
         }
       ]
     },
     {
       id: "3",
-      label: "Office Events",
+      name: "Office Events",
       children: [
         {
           id: "6",
-          label: "2018",
+          name: "2018",
           children: [
             {
               id: "10",
-              label: "Summer Picnic"
+              name: "Summer Picnic"
             },
             {
               id: "11",
-              label: "Valentine's Day Party"
+              name: "Valentine's Day Party"
             },
             {
               id: "12",
-              label: "New Year's Party"
+              name: "New Year's Party"
             }
           ]
         },
         {
           id: "7",
-          label: "2017",
+          name: "2017",
           children: [
             {
               id: "13",
-              label: "Company Anniversary Celebration"
+              name: "Company Anniversary Celebration"
             }
           ]
         }
@@ -53,15 +55,15 @@ const backendData = [
     },
     {
       id: "4",
-      label: "Public Holidays"
+      name: "Public Holidays"
     },
     {
       id: "5",
-      label: "Vacations and Sick Leaves"
+      name: "Vacations and Sick Leaves"
     }
   ];
   
-  export function fetchData() {
+  export function fetchData(): Promise<TreeNode[]> {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(backendData)}, 100);
