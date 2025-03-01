@@ -1,46 +1,22 @@
-# Getting Started with Create React App
+# TreeNav
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Branch breakdown:
+- main: Deployed to vercel with no backend implemented.
+- dockerisation: Dockerised version of TreeNav with backend
 
-## Available Scripts
+# Run locally
 
-In the project directory, you can run:
+## main
+1. Run `npm install` in base directory.
+2. Run `npm start` to run locally. Page should be accessible at `localhost:3000` in default configuration.
+3. Enjoy an amazing TreeNav experience
 
-### `npm start`
+## dockerisation
+1. Run `docker build -t treenav .` to build the container locally.
+2. Run `docker run -p 80:80 treenav`.
+3. Container should start and serve at `localhost:80`.
+4. Enjoy an amazing TreeNav experience
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Vercel Deployment
+Find this deployed at `https://tree-nav-6jep.vercel.app/`.
