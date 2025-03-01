@@ -39,8 +39,8 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({ node }) => {
             if (isExpanded) {
                 return (
                     <div className='node-list-item'>
-                        <svg className='drop-down' width="24" height="24">
-                            <ArrowDropDownIcon/>
+                        <svg className='drop-down-icon' width="24" height="18">
+                            <ArrowDropDownIcon className="arrow-drop-down"/>
                         </svg>
                         {node.name}
                     </div>
@@ -48,8 +48,8 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({ node }) => {
             }
             return (
                 <div className='node-list-item'>
-                    <svg className='drop-down' width="24" height="24">
-                        <ArrowRightIcon/>
+                    <svg className='right-icon' width="24" height="18">
+                        <ArrowRightIcon className="arrow-right"/>
                     </svg>
                     {node.name}
                 </div>
@@ -57,8 +57,8 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({ node }) => {
         }
         return (
             <div className='node-list-item'>
-                <svg className='drop-down' width="10" height="10">
-                    <CircleIcon/>
+                <svg className='circle-icon' width="24" height="10">
+                    <CircleIcon className="circle" sx={{'transform': 'scale(0.5)'}}/>
                 </svg>
                 {node.name}
             </div>

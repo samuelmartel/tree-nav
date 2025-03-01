@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
-li {
+.tree-nav {
   list-style: none;
+}
+
+.node-list-item {
+  display: flex;
+  align-items: center;
 }
