@@ -25,4 +25,4 @@ COPY backend/ ./
 
 EXPOSE 80 8080
 
-CMD ["sh". "-c", "nginx && node /app/backend/index.js"]
+CMD ["sh", "-c", "nginx && node /app/backend/app.js"]
