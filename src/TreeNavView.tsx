@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
 import { useEffect, useState } from 'react'
-import { fetchData } from './services/getData';
+import { fetchData } from './services/data';
 import Tree, { TreeNode } from './TreeNav/TreeNav'
 
 export default function BasicRichTreeView() {
