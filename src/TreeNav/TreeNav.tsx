@@ -14,6 +14,7 @@ interface TreeProps {
     data: TreeNode[];
 }
 
+//Default Export component
 const Tree: React.FC<TreeProps> = ({ data }) => {
     const renderTree = (nodes: TreeNode[]) => {
         return nodes.map((node) => (
@@ -34,6 +35,7 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({ node }) => {
         setIsExpanded(!isExpanded);
     };
 
+    //Display Icon and name based on expanded status and children
     function displayIcon(node: TreeNode) {
         if (node.children) {
             if (isExpanded) {

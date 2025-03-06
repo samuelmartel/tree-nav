@@ -11,7 +11,7 @@ export default function BasicRichTreeView() {
     }, []);
 
     return (
-        <Box sx={{ minHeight: 352, minWidth: 250 }}>
+        <Box className="tree-nav-box" sx={{ minHeight: 352, minWidth: 250 }}>
             <Tree data={nodes}/>
         </Box>
     );

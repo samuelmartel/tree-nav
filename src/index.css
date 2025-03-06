@@ -20,3 +20,12 @@ code {
   display: flex;
   align-items: center;
 }
+ 
+
+.tree-nav-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  transform: scale(0.6) translate(-33.33333%, -33.3333%);
+}
